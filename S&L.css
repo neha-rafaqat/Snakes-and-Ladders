@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(3, 54, 3); 
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 520px;
+    height: 520px;
+    background-image: url('S&L.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.player {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 51, 2); 
+    border: none;
+    border-radius: 5px;
+}
+
+#reset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(2, 46, 2);
+    background-color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #f1eeee;
+}
